@@ -1,5 +1,6 @@
 class Pokemon < ActiveRecord::Base
   has_many :abilities
-  has_many :types
-  has_one :natures
+  has_many :pokemon_types
+  has_many :types, :through => :pokemon_types
+  has_one :nature
 end
