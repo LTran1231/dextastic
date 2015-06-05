@@ -22,7 +22,7 @@ end
 
 
 # Set up ActiveRecord::Base to log its activity
-ActiveRecord::Base.logger = Logger.new(STDOUT)
+ActiveRecord::Base.logger = nil
 
 
 # Configure the database
@@ -31,6 +31,8 @@ database_config = { :adapter  =>  "sqlite3",
 
 ActiveRecord::Base.establish_connection(database_config)
 
+require_relative '../app/controllers/pokemon_controller'
+require_relative '../app/views/pokemon_view'
 
 # Establish connection between models and tables
 ActiveRecord::Base.connection

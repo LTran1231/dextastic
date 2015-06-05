@@ -1,6 +1,6 @@
 types = [
 	'Grass', 'Poison', 'Flying', 'Fire', 'Bug', 'Water',
-	'Normal', 'Ground', 'Fighting', 'Psychic', 'Rock', 'Steel',
+	'Normal', 'Ground', 'Fighting', 'Psychic', 'Rock', 'Dragon',
 	'Ice', 'Ghost', 'Electric', 'Steel'
 	]
 
@@ -70,9 +70,12 @@ Pokemon.create(name: 'Pikachu', evolves_at: 'Thunderstone', ability_id: 150)
 Pokemon.create(name: 'Raichu', evolves_at: 'N/A', ability_id: 150)
 Pokemon.create(name: 'Sandshrew', evolves_at: 22, ability_id: 129)
 Pokemon.create(name: 'Sandslash', evolves_at: 'N/A', ability_id: 129)
-Pokemon.create(name: 'Nidoran', evolves_at: 16, ability_id: 74)
+Pokemon.create(name: 'Nidoran (female)', evolves_at: 16, ability_id: 74)
 Pokemon.create(name: 'Nidorina', evolves_at: 'Moonstone', ability_id: 22)
 Pokemon.create(name: 'Nidoqueen', evolves_at: 'N/A', ability_id: 125)
+Pokemon.create(name: 'Nidoran (male)', evolves_at: 16, ability_id: 74)
+Pokemon.create(name: 'Nidorino', evolves_at: 'Moonstone', ability_id: 22)
+Pokemon.create(name: 'Nidoking', evolves_at: 'N/A', ability_id: 125)
 Pokemon.create(name: 'Clefairy', evolves_at: 'Moonstone', ability_id: 25)
 Pokemon.create(name: 'Clefable', evolves_at: 'N/A', ability_id: 25)
 Pokemon.create(name: 'Vulpix', evolves_at: 'Firestone', ability_id: 40)
