@@ -7,7 +7,7 @@ types = [
 types.each { |type| Type.create(name: type) }
 
 
-abilities = [ 
+abilities = [
 	'Adaptability', 'Aerilate', 'Aftermath', 'Air Lock', 'Analytic',
 	'Anger Point', 'Anticipation', 'Arena Trap', 'Aroma Veil', 'Aura Break',
 	'Bad Dreams', 'Battle Armor', 'Big Pecks', 'Blaze', 'Bulletproof', 'Cheek Pouch',
@@ -17,26 +17,26 @@ abilities = [
 	'Effect Spore', 'Fairy Aura', 'Filter', 'Flame Body', 'Flare Boost', 'Flash Fire',
 	'Flower Gift', 'Flower Veil', 'Forecast', 'Forewarn', 'Friend Guard', 'Frisk',
 	'Fur Coat', 'Gale Wings', 'Gluttony', 'Gooey', 'Grass Pelt', 'Guts', 'Harvest',
-	'Healer', 'Heatproof', 'Heavy Metal', 'Honey Gather', 'Huge Power', 'Hustle', 
-	'Hydration', 'Hyper Cutter', 'Ice Body', 'Illuminate', 'Illusion', 'Immunity', 
+	'Healer', 'Heatproof', 'Heavy Metal', 'Honey Gather', 'Huge Power', 'Hustle',
+	'Hydration', 'Hyper Cutter', 'Ice Body', 'Illuminate', 'Illusion', 'Immunity',
 	'Imposter', 'Infiltrator', 'Inner Focus', 'Insomnia', 'Intimidate', 'Iron Barbs',
 	'Iron Fist', 'Justified', 'Keen Eye', 'Klutz', 'Leaf Guard', 'Levitate',
 	'Light Metal', 'Lightning Rod', 'Limber', 'Liquid Ooze', 'Magic Bounce', 'Magic Guard',
 	'Magician', 'Magma Armor', 'Magnet Pull', 'Marvel Scale', 'Mega Launcher', 'Minus',
-	'Mold Breaker', 'Moody', 'Motor Drive', 'Moxie', 'Multiscale', 'Multitype', 'Mummy', 
-	'Natural Cure', 'No Guard', 'Normalize', 'Oblivious', 'Overcoat', 'Overgrow', 'Own Tempo', 
-	'Parental Bond', 'Pickpocket', 'Pickup', 'Pixilate', 'Plus', 'Poison Heal', 'Poison Point', 
-	'Poison Touch', 'Prankster', 'Pressure', 'Protean', 'Pure Power', 'Quick Feet', 'Rain Dish', 
-	'Rattled', 'Reckless', 'Refrigerate', 'Regenerator', 'Rivalry', 'Rock Head', 'Rough Skin', 
-	'Run Away', 'Sand Force', 'Sand Rush', 'Sand Stream', 'Sand Veil', 'Sap Sipper', 'Scrappy', 
-	'Serene Grace', 'Shadow Tag', 'Shed Skin', 'Sheer Force', 'Shell Armor', 'Shield Dust', 
+	'Mold Breaker', 'Moody', 'Motor Drive', 'Moxie', 'Multiscale', 'Multitype', 'Mummy',
+	'Natural Cure', 'No Guard', 'Normalize', 'Oblivious', 'Overcoat', 'Overgrow', 'Own Tempo',
+	'Parental Bond', 'Pickpocket', 'Pickup', 'Pixilate', 'Plus', 'Poison Heal', 'Poison Point',
+	'Poison Touch', 'Prankster', 'Pressure', 'Protean', 'Pure Power', 'Quick Feet', 'Rain Dish',
+	'Rattled', 'Reckless', 'Refrigerate', 'Regenerator', 'Rivalry', 'Rock Head', 'Rough Skin',
+	'Run Away', 'Sand Force', 'Sand Rush', 'Sand Stream', 'Sand Veil', 'Sap Sipper', 'Scrappy',
+	'Serene Grace', 'Shadow Tag', 'Shed Skin', 'Sheer Force', 'Shell Armor', 'Shield Dust',
 	'Simple', 'Skill Link', 'Slow Start', 'Sniper', 'Snow Cloak', 'Snow Warning', 'Solar Power',
-	'Solid Rock', 'Soundproof', 'Speed Boost', 'Stall', 'Stance Change', 'Static', 'Steadfast', 
+	'Solid Rock', 'Soundproof', 'Speed Boost', 'Stall', 'Stance Change', 'Static', 'Steadfast',
 	'Stench', 'Sticky Hold', 'Storm Drain', 'Strong Jaw', 'Sturdy', 'Suction Cups', 'Super Luck',
 	'Swarm', 'Sweet Veil', 'Swift Swim', 'Symbiosis', 'Synchronize', 'Tangled Feet', 'Technician',
 	'Telepathy', 'Teravolt', 'Thick Fat', 'Tinted Lens', 'Torrent', 'Tough Claws', 'Toxic Boost',
-	'Trace', 'Truant', 'Turboblaze', 'Unaware', 'Unburden', 'Unnerve', 'Victory Star', 
-	'Vital Spirit', 'Volt Absorb', 'Water Absorb', 'Water Veil', 'Weak Armor', 'White Smoke', 
+	'Trace', 'Truant', 'Turboblaze', 'Unaware', 'Unburden', 'Unnerve', 'Victory Star',
+	'Vital Spirit', 'Volt Absorb', 'Water Absorb', 'Water Veil', 'Weak Armor', 'White Smoke',
 	'Wonder Guard', 'Wonder Skin', 'Zen Mode'
 ]
 
@@ -73,6 +73,16 @@ Pokemon.create(name: 'Sandslash', evolves_at: nil, type_id: 8, ability_id: 129)
 Pokemon.create(name: 'Nidoran', evolves_at: 36, type_id: 7, ability_id: 74)
 Pokemon.create(name: 'Nidorina', evolves_at: nil, type_id: 7, ability_id: 22)
 Pokemon.create(name: 'Nidoqueen', evolves_at: 20, type_id: 7, ability_id: 125)
+
+natures = [
+	'Hardy', 'Lonely', 'Brave', 'Adamant', 'Naughty',
+	'Bold', 'Docile', 'Relaxed', 'Impish', 'Lax', 'Timid',
+	'Hasty', 'Serious', 'Jolly', 'Naive', 'Modest', 'Mild',
+	'Quiet', 'Bashful', 'Rash', 'Calm', 'Gentle', 'Sassy',
+	'Careful', 'Quirky'
+]
+
+	natures.each {|nature| Nature.create(name: nature)}
 
 
 
