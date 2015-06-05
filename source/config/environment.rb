@@ -31,6 +31,10 @@ database_config = { :adapter  =>  "sqlite3",
 
 ActiveRecord::Base.establish_connection(database_config)
 
+require_relative '../app/controllers/pokemon_controller'
+require_relative '../app/views/pokemon_view'
+
+
 
 # Establish connection between models and tables
 ActiveRecord::Base.connection
